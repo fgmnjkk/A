@@ -4,8 +4,8 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 from motor.motor_asyncio import AsyncIOMotorClient
 
-TELEGRAM_BOT_TOKEN = '7387777379:AAH2xoCqonATQsxFpxNv7Du0H4e_NjeWBsE'
-ADMIN_USER_ID = 5660031361
+TELEGRAM_BOT_TOKEN = '7651280704:AAG8E5rEQkxYLAaNGTc6G6WvHKDAEeoM1XM'
+ADMIN_USER_ID = 7509496491
 MONGO_URI = "mongodb+srv://Kamisama:Kamisama@kamisama.m6kon.mongodb.net/"
 DB_NAME = "dake"
 COLLECTION_NAME = "users"
